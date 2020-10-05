@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD autos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="p-3">
+        <!-- <form action=""></form> -->
+        <form onsubmit="event.preventDefault(), addCar()" id="miForm">
+            <div>
+                <label for="Marca">Marca</label>
+                <input type="text" id="Marca" class="form-control">
+            </div>
+            <div>
+                <label for="Modelo" class="dos">Modelo</label>
+                <input type="text" id="Modelo" class="form-control">
+            </div>
+            <div>
+                <label for="Color" class="tres">Color</label>
+                <input type="text" id="Color" class="form-control">
+            </div>
+            <div>
+                <label for="Año" class="cuatro">Año</label>
+                <input type="text" id="Año" class="form-control">
+            </div>
+            <div>
+                <label for="Precio" class="cinco">Precio</label>
+                <input type="text" id="Precio" class="form-control">
+            </div>
+            <div class="boton">
+                <button type="submit" class="btn btn-primary seis">Agregar</button>
+            </div>
+        </form>
+    </section>
+    <section class="p-3">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Año</th>
+                    <th>Precio</th>
+                    <th>opciones</th>
+                </tr>
+                <tbody>
+                    
+                </tbody>
+            </thead>
+        </table>
+    </section>
+    <script type="module" src="./crud.js"></script>
+</body>
+</html>
